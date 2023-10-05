@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         var factory = new CoffeeMachineFactory();
-        CoffeeMachine fancyCoffeeMachine = factory.Create(CoffeeMachineFeatureType.Grinder | CoffeeMachineFeatureType.WifiModule);
+        var fancyCoffeeMachine = factory.Create(CoffeeMachineFeatureType.Grinder | CoffeeMachineFeatureType.WifiModule);
 
         fancyCoffeeMachine.BrewCoffee();
 
