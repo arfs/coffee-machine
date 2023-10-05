@@ -9,10 +9,10 @@ class Program
 
         fancyCoffeeMachine.BrewCoffee();
 
-        var grinder = fancyCoffeeMachine.GetFeatureByName(CoffeeMachineFeatureType.Grinder);
+        var grinder = fancyCoffeeMachine.GetFeatureByType(CoffeeMachineFeatureType.Grinder);
         grinder?.Operate();
 
-        var wifiModule = fancyCoffeeMachine.GetFeatureByName(CoffeeMachineFeatureType.WifiModule);
+        var wifiModule = fancyCoffeeMachine.GetFeatureByType(CoffeeMachineFeatureType.WifiModule);
         wifiModule?.Operate();
     }
 }

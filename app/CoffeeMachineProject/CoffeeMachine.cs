@@ -14,7 +14,7 @@ namespace CoffeeMachineProject
             Console.WriteLine("Brewing coffee.");
         }
 
-        public ICoffeeMachineFeature? GetFeatureByName(CoffeeMachineFeatureType feature)
+        public ICoffeeMachineFeature? GetFeatureByType(CoffeeMachineFeatureType feature)
         {
             return _features.FirstOrDefault(f => f.FeatureType.Equals(feature));
         }
