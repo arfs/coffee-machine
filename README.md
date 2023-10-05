@@ -31,7 +31,7 @@ docker compose up -d
 ## Start interactive session with container
 
 ```sh
-docker compose exec dotnet /bin/bash
+docker compose exec coffee-machine /bin/bash
 ```
 
 ## Run Coffee Machine project
@@ -45,7 +45,7 @@ dotnet run
 If you're still on the host (local) terminal
 
 ```sh
-docker compose exe coffee-machine dotnet run
+docker compose exec coffee-machine dotnet run
 ```
 
 
