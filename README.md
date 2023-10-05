@@ -4,14 +4,14 @@ You are in charge for creating a system that stores coffee machines. Each coffee
 
 Please create a class diagram to store these coffee machines.  Only those two aspects about a coffee machine are important to capture at this point but the design must be extendible.
 
-For example, in future I may ask you to extend the design to store cofree machines with a WIFI coffee reordering module and so on.  How would an instance of a coffee machine be created? 
+For example, in future I may ask you to extend the design to store coffee machines with a WIFI coffee reordering module and so on.  How would an instance of a coffee machine be created? 
 
 ## Solution
 
 - Use the factory pattern to create an instance of the coffee machine.
-- For the factory's Create() method, pass in features that you want the coffee machine to have.
+- For the factory's `Create()` method, pass in features that you want the coffee machine to have.
 - Use composition to add a list of features to the coffee machine.
-- Features follow a common interface that allows different implementations of its operation.
+- Features follow a common interface that allows different implementations of its `Operate()` method.
 
 ## UML Diagram
 
