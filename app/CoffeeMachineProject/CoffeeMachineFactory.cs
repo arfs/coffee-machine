@@ -1,6 +1,7 @@
 namespace CoffeeMachineProject
 {
-    public class CoffeeMachineFactory : ICoffeeMachineFactory {
+    public class CoffeeMachineFactory : ICoffeeMachineFactory 
+    {
         public CoffeeMachine Create(CoffeeMachineFeatureType features)
         {
             var coffeeMachine = new CoffeeMachine();
