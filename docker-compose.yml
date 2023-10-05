@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  coffee-machine:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/app
+    tty: true
